@@ -1,7 +1,7 @@
 USE dbtestewk;
 
 CREATE TABLE IF NOT EXISTS PRODUTOS ( ID_Produto Integer NOT NULL AUTO_INCREMENT
-          									, NM_Produto VarChar(80) NOT NULL
+          		      , NM_Produto VarChar(80) NOT NULL
                                     , VL_Produto FLOAT NOT NULL
                                     , primary key(ID_Produto));
 
