@@ -21,7 +21,3 @@ ALTER TABLE PEDIDOS_ITENS ADD CONSTRAINT FK_Produto FOREIGN KEY (ID_Produto) REF
                                          
 CREATE INDEX ix_ID_Pedido  ON PEDIDOS_ITENS(ID_Pedido);
 CREATE INDEX ix_ID_Cliente ON PEDIDOS(ID_Cliente);
-
-SELECT ID_Pedido_Item, ID_Pedido, ID_Produto, VL_Unitario, NO_Quantidade, VL_Total
-FROM pedidos_itens
-WHERE ID_Pedido = :ID_Pedido
